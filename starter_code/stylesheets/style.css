@@ -5,3 +5,137 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+/*General styles*/
+html, body {
+    font-family: Helvetica, sans-serif;
+    color: #5b5e6d;
+    margin: 5px 0px 0px 0px;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2C303F;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones*/
+
+    /*Navbar with hamburger*/
+    .respmenu > img {
+        width: 25%;
+        margin-left: 6%;
+    }
+
+    .respmenu nav li {
+        color: #5b5e6d;
+        text-decoration: underline 2px;
+        display: block;
+        padding: 10px 20px;
+        max-width: 200px;
+        background: white;
+    }
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 35px;
+        pointer-events: none;
+        color: #5b5e6d;
+        margin: 9px 15px 0px 0px;
+    }
+    
+    .respmenu input[type="checkbox"] {
+        opacity: 0;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .respmenu {
+      color: #2C303F;
+      position: relative;
+      background: white;
+      min-height: 35px;
+      border-bottom: 2px solid #e7e8ee;
+    }
+    
+    .respmenu nav {
+      display: none;
+    }
+    
+    .respmenu input:checked ~ nav {
+      display: block;
+    }
+    
+    .respmenu input:checked ~ .fa-bars {
+      display: none;
+    }
+    
+    .respmenu input:not(:checked) ~ .fa-times {
+      display: none;
+    }
+
+    /* Header */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    header > h1 {
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    header > p {
+        width: 90%;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+    header > input {
+        width: 80%;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 15px 0px 15px 15px;
+        color: #8a8c97;
+        font-size: 16px;
+    }
+
+    header > button {
+        width: 84%;
+        background-color: #192592;
+        color: white;
+        border: #192592;
+        padding: 18px 0px 18px 0px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    button + p {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    header > img {
+        width: 80vw;
+        margin-top: 20px;
+    }
+
+    /* Main */
+
+
+
+}
+    
