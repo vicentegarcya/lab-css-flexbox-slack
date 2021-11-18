@@ -1,6 +1,6 @@
 /*
 background-grey: #F4F3F4;
-button-purple: #192592
+button-purple: #192592;
 main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
@@ -14,9 +14,29 @@ html, body {
     font-size: 18px;
 }
 
-h1 {
+h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #2C303F;
+}
+
+p {
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+input {
+    width: 80%;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 15px 0px 15px 15px;
+    color: #8a8c97;
+    font-size: 16px;
+}
+
+button {
+    width: 84%;
+    padding: 18px 0px 18px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -101,26 +121,12 @@ h1 {
 
     header > p {
         width: 90%;
-        line-height: 1.4;
-        font-weight: 300;
-    }
-
-    header > input {
-        width: 80%;
-        background-color: white;
-        border: 1px solid lightgray;
-        padding: 15px 0px 15px 15px;
-        color: #8a8c97;
-        font-size: 16px;
     }
 
     header > button {
-        width: 84%;
         background-color: #192592;
         color: white;
         border: #192592;
-        padding: 18px 0px 18px 0px;
-        margin: 15px 0px 15px 0px;
     }
 
     button + p {
@@ -133,9 +139,62 @@ h1 {
         margin-top: 20px;
     }
 
-    /* Main */
+    /* Success Cases */
 
+    #success-cases {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F4F3F4;
+    }
 
+    #success-cases h2 {
+        margin-top: 70px;
+    }
+
+    #success-cases p {
+        text-align: center;
+        margin: 2px 40px 20px 40px;
+    }
+
+    #success-cases button {
+        background-color: white;
+        border: 1px solid #192592;
+        color: #192592;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .logos {
+        width: 150px;
+        margin: 30px 0px;
+    }
+
+    #success-cases img:last-child {
+        margin-bottom: 90px;
+    }
+
+    #try-for-free {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid lightgray;
+        padding: 40px 0px;
+    }
+
+    #try-for-free button {
+        background-color: #192592;
+        color: white;
+        border: #192592;
+    }
+
+    #try-for-free h2 {
+        margin-bottom: 40px;
+    }
+
+    /* Footer */
 
 }
     
